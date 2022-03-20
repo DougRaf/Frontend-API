@@ -1,0 +1,40 @@
+.footer {
+    margin-top: -15px;
+    color: white;
+    background-color: #17a2b8;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 1rem 1rem; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: system-ui; 
+    vertical-align: baseline;
+}
+
+.btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show>.btn-light.dropdown-toggle {
+    color: #212529;
+    background-color: #bee5eb;
+    border-color: #d3d9df;
+}
+
+    h5.mo {
+    float: left;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
+h5.img {
+    /* padding-right: 730px; */
+    margin-bottom: 10px;
+    /* margin-top: 20px; */
+    /* padding-bottom: 1px; */
+    position: relative;
+    right: 28%;
+    /* bottom: 0px; */
+}

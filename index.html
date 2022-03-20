@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" ontent="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+        <meta name="description" content="Exemplo de paginação com dados do GitHub">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Jquery">
+        <meta name="author" content="Douglas Rafael Esquinelato">
+
+        <title>Projeto GitHub</title>
+
+        <!-- Arquivos de Style css -->
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">     
+        <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css">       
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body>
+        <div class="container-fluid mt-3">        
+            <div class="jumbotron jumbotron-fluid bg-info text-white">
+                <div class="container-fluid">
+                    <h1 class="display-5">Github Repositorios</h1>
+                    <p class="lead">Usando api do GitHub para buscar dados relaçionados a usuarios do GitHub</p>
+                </div>
+            </div>
+        
+            <!-- Tabela com os dados -->
+        
+            <div class="table-responsive">  
+                <table id="myTable" class="table table-bordered tabela">
+                    <thead>
+                        <tr class="table-info">
+                            <th scope="col">ID</th>
+                            <th scope="col">Name</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td></td>
+                        <td></td>                                          
+                    </tr>
+                </table>                
+            </div>
+            <footer>
+                <center>
+                    <div class="footer">Desenvolvido por Douglas Esquinelato © 2022</div>
+                </center>
+            </footer>
+        </div>
+
+        <!-- Bibliotecas Jquery -->
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/fancyTable.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Função do plugin de paginação -->  
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".tabela").fancyTable({
+                    /* Column number for initial sorting*/
+                    sortColumn: 0,
+                    /* Setting pagination or enabling */
+                    pagination: true,
+                    /* Disable searchable function */            
+                    searchable: false,
+                    /* Rows per page kept for display */
+                    perPage: 5,
+                    globalSearch: true
+                });     
+            });
+        </script>
+    </body>
+</html>

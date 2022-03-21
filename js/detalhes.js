@@ -11,11 +11,11 @@ request.onload = function () {
   var data = JSON.parse(this.response);
   var statusHTML = '';
   $.each([data], function(i, status) {  
-    statusHTML += '<h5 class="mo">' + status.id + '</h5>';
-    statusHTML += '<h5 class="mo">' + status.login + '</h5>';
-    statusHTML += '<h5 class="mo">' + status.html_url + '</h5>';
-    statusHTML += '<h5 class="mo">' + status.created_at + '</h5>';
-    statusHTML += '<h5 class="img"><center> <img src=' + status.avatar_url + ' alt="some text" width=60 height=40> </h5>';
+    statusHTML += '<h5 class="mo">ID : ' + status.id + '</h5>';
+    statusHTML += '<h5 class="mo">NOME : ' + status.login + '</h5>';
+    statusHTML += '<h5 class="mo">URL DO GITHUB : ' + status.html_url + '</h5>';
+    statusHTML += '<h5 class="mo">CONTA DESDE : ' + status.created_at.replace(/(\d*)-(\d*)-(\d*).*/, '$1-$2-$3').split('-').reverse().join('/') + '</h5>';
+    statusHTML += '<h5 class="mo">IMG : <center> <img id="img" src=' + status.avatar_url + ' alt="some text" width=60 height=40> </h5>';
    
   });  
   $('h5').html(statusHTML);
